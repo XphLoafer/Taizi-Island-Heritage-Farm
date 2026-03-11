@@ -19,6 +19,11 @@ nav a{color:white;margin:0 15px;text-decoration:none;font-weight:bold}
 section{padding:40px;max-width:1000px;margin:auto;background:white;margin-top:20px;border-radius:8px}
 .products{display:flex;gap:20px;flex-wrap:wrap}
 .card{flex:1;min-width:200px;border:1px solid #ddd;border-radius:8px;padding:20px;text-align:center}
+
+.gallery{display:flex;gap:20px;flex-wrap:wrap;justify-content:center}
+.photo{text-align:center}
+.photo img{width:280px;border-radius:8px;border:1px solid #ddd}
+
 footer{background:#2e7d32;color:white;text-align:center;padding:20px;margin-top:30px}
 .lang{font-size:14px;opacity:0.9}
 </style>
@@ -35,6 +40,7 @@ footer{background:#2e7d32;color:white;text-align:center;padding:20px;margin-top:
 <nav>
 <a href="#about">About | 关于我们</a>
 <a href="#products">Products | 产品</a>
+<a href="#gallery">Gallery | 农场图片</a>
 <a href="#process">Process | 农业流程</a>
 <a href="#contact">Contact | 联系方式</a>
 </nav>
@@ -54,18 +60,44 @@ We manage the full agricultural process from seed selection and greenhouse culti
 <section id="products">
 <h2>Our Products | 我们的产品</h2>
 <div class="products">
+
 <div class="card">
 <h3>Tomatoes | 番茄</h3>
 <p>Fresh, high-quality tomatoes grown through careful seed selection and greenhouse management.</p>
 <p>通过严格种子选择和温室管理种植的新鲜高品质番茄。</p>
 <p><strong>Harvest Season | 采收季节:</strong> June – November | 每年6–11月</p>
 </div>
+
 <div class="card">
 <h3>Cucumbers | 黄瓜</h3>
 <p>Crisp cucumbers cultivated using sustainable farming techniques.</p>
 <p>采用可持续农业技术种植的优质黄瓜。</p>
 <p><strong>Harvest Season | 采收季节:</strong> June – November | 每年6–11月</p>
 </div>
+
+</div>
+</section>
+
+<section id="gallery">
+<h2>Farm Gallery | 农场图片</h2>
+
+<div class="gallery">
+
+<div class="photo">
+<img src="greenhouse.jpg" alt="Greenhouse tomato cultivation 温室番茄种植">
+<p>Greenhouse Cultivation | 温室种植</p>
+</div>
+
+<div class="photo">
+<img src="images/tomatoes.jpg" alt="Fresh tomatoes harvest 新鲜番茄采收">
+<p>Tomato Harvest | 番茄采收</p>
+</div>
+
+<div class="photo">
+<img src="images/cucumbers.jpg" alt="Cucumber farming 黄瓜种植">
+<p>Cucumber Farming | 黄瓜种植</p>
+</div>
+
 </div>
 </section>
 
@@ -81,7 +113,9 @@ We manage the full agricultural process from seed selection and greenhouse culti
 
 <section id="contact">
 <h2>Contact | 联系方式</h2>
-<p>Location | 地址: Taizidao Laonongmin Farming, Forestry, Husbandry and Fisheries, Liaoyang, Liaoning, China; 辽宁省辽阳市太子岛老农民农林牧渔基地</p>
+<p>Location | 地址: Taizidao Laonongmin Farming, Forestry and Fisheries Base, Liaoyang, Liaoning, China<br>
+辽宁省辽阳市太子岛老农民农林牧渔基地</p>
+
 <p>Name | 姓名: Xiuce Gu</p>
 <p>Email | 邮箱: mgu.joy@gmail.com</p>
 <p>Phone | 电话: +86 158 4191 8476</p>
