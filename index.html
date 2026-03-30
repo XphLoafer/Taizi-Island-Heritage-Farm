@@ -92,6 +92,47 @@ section{
 .photo img:hover{
   transform:scale(1.05);
 }
+/* 🌱 FLOW PROCESS */
+.flow{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:15px;
+  margin-top:20px;
+}
+
+.step{
+  text-align:center;
+}
+
+.step img{
+  width:240px;
+  height:170px;
+  object-fit:cover;
+  border-radius:10px;
+}
+
+.arrow{
+  font-size:28px;
+  color:#2e7d32;
+  font-weight:bold;
+}
+
+/* Button */
+.btn{
+  display:inline-block;
+  padding:12px 25px;
+  background:#2e7d32;
+  color:white;
+  text-decoration:none;
+  border-radius:6px;
+  margin-top:10px;
+}
+
+.btn:hover{
+  background:#1b5e20;
+}
 /* Footer */
 footer{
   background:#2e7d32;
@@ -175,6 +216,45 @@ We manage the full agricultural process from seed selection and greenhouse culti
 </div>
 </section>
 
+<section id="seedlings">
+<h2>🌱 Seedling Cultivation Process | 育苗流程</h2>
+
+<p style="text-align:center;max-width:800px;margin:auto;">
+Standardized greenhouse techniques ensure strong root development,
+uniform growth, and high survival rates.
+</p>
+
+<div class="flow">
+
+<div class="step">
+<img src="images/Seeds-to-Sprouts.jpg">
+<p><strong>Seeds to Sprouts</strong><br>种子发芽</p>
+</div>
+
+<div class="arrow">→</div>
+
+<div class="step">
+<img src="images/Transplanting.jpg">
+<p><strong>Transplanting</strong><br>幼苗移栽</p>
+</div>
+
+<div class="arrow">→</div>
+
+<div class="step">
+<img src="images/Sprouts-to-Seedlings.jpg">
+<p><strong>Early Growth</strong><br>初期生长</p>
+</div>
+
+<div class="arrow">→</div>
+
+<div class="step">
+<img src="images/SeedlingsManagement.jpg">
+<p><strong>Greenhouse Management</strong><br>温室管理</p>
+</div>
+
+</div>
+</section>
+
 <section id="gallery">
 <h2>Farm Gallery | 农场图片</h2>
 
@@ -183,16 +263,6 @@ We manage the full agricultural process from seed selection and greenhouse culti
 <div class="photo">
 <img src="images/greenhouse.jpg" alt="Greenhouse 温室">
 <p>Greenhouse Cultivation | 温室种植</p>
-</div>
-
-<div class="photo">
-<img src="images/seedlings1.jpg" alt="Seedlings1 育苗1">
-<p>Seedlings1 | 育苗1</p>
-</div>
-
-<div class="photo">
-<img src="images/seedlings2.jpg" alt="Seedlings2 育苗2">
-<p>Seedlings2 | 育苗2</p>
 </div>
 
 </div>
