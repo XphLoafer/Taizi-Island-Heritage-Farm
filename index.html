@@ -22,7 +22,8 @@ section{padding:40px;max-width:1000px;margin:auto;background:white;margin-top:20
 
 .gallery{display:flex;gap:20px;flex-wrap:wrap;justify-content:center}
 .photo{text-align:center}
-.photo img{width:280px;border-radius:8px;border:1px solid #ddd}
+.photo img{width:100%;max-width:320px;border-radius:10px;transition:0.3s;}
+.photo img:hover{transform:scale(1.05);}
 
 footer{background:#2e7d32;color:white;text-align:center;padding:20px;margin-top:30px}
 .lang{font-size:14px;opacity:0.9}
@@ -84,19 +85,33 @@ We manage the full agricultural process from seed selection and greenhouse culti
 <div class="gallery">
 
 <div class="photo">
-<img src="greenhouse.jpg" alt="Greenhouse tomato cultivation 温室番茄种植">
+<img src="images/greenhouse.jpg" alt="Greenhouse 温室">
 <p>Greenhouse Cultivation | 温室种植</p>
 </div>
 
 <div class="photo">
-<img src="images/tomatoes.jpg" alt="Fresh tomatoes harvest 新鲜番茄采收">
-<p>Tomato Harvest | 番茄采收</p>
+<img src="images/seedlings1.jpg" alt="Seedlings1 育苗1">
+<p>Seedlings1 | 育苗1</p>
 </div>
 
 <div class="photo">
-<img src="images/cucumbers.jpg" alt="Cucumber farming 黄瓜种植">
-<p>Cucumber Farming | 黄瓜种植</p>
+<img src="images/seedlings2.jpg" alt="Seedlings2 育苗2">
+<p>Seedlings2 | 育苗2</p>
 </div>
+
+</div>
+</section>
+
+<section id="strength">
+<h2>Why Choose Us | 为什么选择我们</h2>
+<ul>
+<li>✔ 10+ Years Farming Experience | 10年以上种植经验</li>
+<li>✔ Greenhouse Controlled Production | 温室标准化种植</li>
+<li>✔ Stable Supply Capacity | 稳定供货能力</li>
+<li>✔ Direct Farm-to-Market | 农场直供</li>
+<li>✔ Suitable for Wholesale & Distribution | 支持批发与渠道合作</li>
+</ul>
+</section>
 
 </div>
 </section>
@@ -128,4 +143,3 @@ We manage the full agricultural process from seed selection and greenhouse culti
 
 </body>
 </html>
-
