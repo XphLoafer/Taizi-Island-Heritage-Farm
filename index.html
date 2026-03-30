@@ -164,6 +164,52 @@ footer{
   }
 
 }
+
+.flow{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:15px;
+  margin-top:20px;
+}
+
+.step{
+  background:#f9f9f9;
+  padding:20px;
+  border-radius:10px;
+  min-width:180px;
+  text-align:center;
+  box-shadow:0 2px 8px rgba(0,0,0,0.08);
+  text-decoration:none;
+  color:#333;
+  transition:0.3s;
+}
+
+.step:hover{
+  background:#e8f5e9;
+  transform:translateY(-3px);
+}
+
+.arrow{
+  font-size:28px;
+  color:#2e7d32;
+  font-weight:bold;
+}
+
+@media(max-width:768px){
+  .flow{
+    flex-direction:column;
+  }
+
+  .arrow{
+    transform:rotate(90deg);
+  }
+}
+
+html{
+  scroll-behavior:smooth;
+}
 </style>
 
 
@@ -186,14 +232,23 @@ footer{
 <section id="about">
 <h2>About Our Farm | 关于我们的农场</h2>
 <p>
-Taizi Island Heritage Farm is a family agricultural business specializing in tomato and cucumber production. 
-We manage the full agricultural process from seed selection and greenhouse cultivation to harvesting and market distribution.
+Taizi Island Heritage Farm is a family-operated agricultural business located in Liaoyang, Liaoning, China. 
+We specialize in greenhouse cultivation of tomatoes, cucumbers, and a variety of seasonal crops.
 </p>
 <p>
-太子岛老农民农场是一家家庭农业企业，专注于番茄和黄瓜种植。
-我们管理完整的农业流程，包括种子选择、温室种植、收获以及市场销售与分销。
+With over 30 years of farming experience, we manage the full agricultural process — from seed selection 
+and seedling cultivation to greenhouse production, harvesting, and market distribution — ensuring stable supply 
+and consistent product quality.
+</p>
+<p>
+太子岛老农民农场位于中国辽宁辽阳，是一家家庭经营的农业企业，专注于温室番茄、黄瓜及多种季节性农产品的种植。
+</p>
+<p>
+凭借30多年的种植经验，我们实现从种子选择、育苗培育、温室种植到采收及市场分销的全流程管理，
+确保产品质量稳定、供应可靠。
 </p>
 </section>
+
 
 <section id="products">
 <h2>Our Products | 我们的产品</h2>
@@ -221,8 +276,8 @@ Availability may vary depending on harvest periods.
 <div class="card"><h3>Chili Pepper | 尖辣椒</h3><p>Seasonal Supply</p></div>
 
 <div class="card"><h3>Cauliflower | 菜花</h3><p>Seasonal Supply</p></div>
-<div class="card"><h3>Cabbage | 大头菜 / 白菜</h3><p>Seasonal Supply</p></div>
-
+<div class="card"><h3>Cabbage | 大头菜 </h3><p>Seasonal Supply</p></div>
+<div class="card"><h3>Chinese Cabbage | 白菜</h3><p>Seasonal Supply</p></div>
 <div class="card"><h3>Radish | 圆萝卜</h3><p>Seasonal Supply</p></div>
 <div class="card"><h3>Green Onion | 大葱</h3><p>Seasonal Supply</p></div>
 
@@ -238,8 +293,86 @@ Availability may vary depending on harvest periods.
 <div class="card"><h3>Live Chicken | 活鸡</h3><p>Available on Request | 按需供应</p></div>
 
 </div>
+</section>
+
+
+<section id="pricing">
+<h2>Pricing Policy | 价格说明</h2>
+<p style="text-align:center;max-width:800px;margin:auto;">
+Our product prices are based on daily market conditions and follow the pricing of the Taizihe Morning Market.
+This ensures fair, transparent, and competitive pricing for all partners.
+<br><br>
+我们的产品价格根据市场行情每日浮动，并参考太子河早市价格，
+确保价格公平透明，具有市场竞争力。
+</p>
+<br>
+<div style="text-align:center;">
+<div class="card" style="display:inline-block;max-width:400px;">
+<h3>Market-Based Pricing | 市场定价</h3>
+<p>
+✔ Updated daily | 每日更新<br>
+✔ Based on local market | 参考本地市场<br>
+✔ Negotiable for bulk orders | 大宗订单可协商
+</p>
+</div>
+</div>
+<p style="text-align:center;margin-top:20px;">
+
+<br>
+<div style="text-align:center;">
+<div class="card" style="display:inline-block;max-width:400px;">
+<h3>For latest pricing, please contact us directly.</h3> 
+<h3>如需最新价格，请直接联系我们。</h3>
+
+</p>
+<p style="text-align:center;">
+We ensure our prices remain aligned with local market trends to maintain fairness and long-term cooperation.
+<br>
+我们确保价格与本地市场保持一致，以促进长期合作关系。
+</p>
+</section>
+
+
+<section id="price-trend">
+
+<h2>Price Trend Explanation | 价格趋势说明</h2>
+
+<p style="text-align:center;max-width:800px;margin:auto;">
+Agricultural product prices fluctuate based on seasonal supply, weather conditions, and market demand. 
+Our pricing follows the Taizihe Morning Market to ensure alignment with real-time local wholesale trends.
+<br><br>
+农产品价格受季节、天气及市场供需影响而波动。我们的价格参考太子河早市，
+与本地批发市场行情保持一致。
+</p>
+
+<br>
+
+<div class="factors">
+
+<div class="factor">
+<h3>🌱 Seasonal Production</h3>
+<p>价格随种植季节变化</p>
+</div>
+
+<div class="factor">
+<h3>☀️ Weather Conditions</h3>
+<p>天气影响产量与品质</p>
+</div>
+
+<div class="factor">
+<h3>📦 Supply & Demand</h3>
+<p>市场供需关系变化</p>
+</div>
+
+<div class="factor">
+<h3>💰 Market Pricing</h3>
+<p>参考太子河早市行情</p>
+
 
 </section>
+
+
+
 
 <section id="seedlings">
 <h2>🌱 Seedling Cultivation Process | 育苗流程</h2>
@@ -306,16 +439,28 @@ uniform growth, and high survival rates.
 
 </div>
 </section>
-
 <section id="process">
-<h2>Our Farm-to-Market Process | 从农场到市场的流程</h2>
-<ul>
-<li>Seed Selection | 种子选择</li>
-<li>Greenhouse Cultivation | 温室种植</li>
-<li>Harvest Management | 收获管理</li>
-<li>Market Distribution | 市场分销</li>
-</ul>
+<h2>Farm-to-Market Process | 从农场到市场的流程</h2>
+
+<div class="flow">
+<a href="#seedlings" class="step">
+<p><strong>1. Seed Selection</strong><br>种子选择</p>
+</a>
+<div class="arrow">→</div>
+<a href="#gallery" class="step">
+<p><strong>2. Greenhouse Cultivation</strong><br>温室种植</p>
+</a>
+<div class="arrow">→</div>
+<a href="#process" class="step">
+<p><strong>3. Harvest Management</strong><br>收获管理</p>
+</a>
+<div class="arrow">→</div>
+<a href="#contact" class="step">
+<p><strong>4. Market Distribution</strong><br>市场分销</p>
+</a>
+</div>
 </section>
+
 
 <section id="contact">
 <h2>Contact | 联系方式</h2>
@@ -344,6 +489,12 @@ style="border:0;border-radius:12px;">
 <p style="text-align:center;margin-top:10px;">
 <a href="https://www.google.com/maps?q=41.235566,123.288530" target="_blank" class="btn">
 📍 View Exact Location on Google Maps
+</a>
+</p>
+
+<p style="text-align:center;">
+<a href="https://map.baidu.com/search/41.235566,123.288530" target="_blank" class="btn">
+📍 在百度地图查看位置 (View on Baidu Map)
 </a>
 </p>
 
