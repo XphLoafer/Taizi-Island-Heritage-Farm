@@ -232,6 +232,23 @@ html{
   transform:translateY(-5px);
   transition:0.3s;
 }
+
+details{
+  background:#f9f9f9;
+  padding:15px 20px;
+  border-radius:8px;
+  margin-bottom:10px;
+  cursor:pointer;
+}
+
+summary{
+  font-size:18px;
+  cursor:pointer;
+}
+
+details[open]{
+  box-shadow:0 2px 8px rgba(0,0,0,0.08);
+}
 </style>
 
 
@@ -319,79 +336,54 @@ Availability may vary depending on harvest periods.
 
 
 <section id="pricing">
-<h2>Pricing Policy | 价格说明</h2>
-<p style="text-align:center;max-width:800px;margin:auto;">
-Our product prices are based on daily market conditions and follow the pricing of the Taizihe Morning Market.
-This ensures fair, transparent, and competitive pricing for all partners.
-<br><br>
-我们的产品价格根据市场行情每日浮动，并参考太子河早市价格，
-确保价格公平透明，具有市场竞争力。
-</p>
-<br>
-<div style="text-align:center;">
-<div class="card" style="display:inline-block;max-width:400px;">
-<h3>Market-Based Pricing | 市场定价</h3>
-<p>
-✔ Updated daily | 每日更新<br>
-✔ Based on local market | 参考本地市场<br>
-✔ Negotiable for bulk orders | 大宗订单可协商
-</p>
-</div>
-</div>
-<p style="text-align:center;margin-top:20px;">
 
-<br>
-<div style="text-align:center;">
-<div class="card" style="display:inline-block;max-width:400px;">
-<h3>For latest pricing, please contact us directly.</h3> 
-<h3>如需最新价格，请直接联系我们。</h3>
+<h2>Pricing & Market Information | 价格与市场说明</h2>
 
-</p>
-<p style="text-align:center;">
-We ensure our prices remain aligned with local market trends to maintain fairness and long-term cooperation.
-<br>
-我们确保价格与本地市场保持一致，以促进长期合作关系。
-</p>
-</section>
-
-
-<section id="price-trend">
-
-<h2>Price Trend Explanation | 价格趋势说明</h2>
-
-<p style="text-align:center;max-width:800px;margin:auto;">
-Agricultural product prices fluctuate based on seasonal supply, weather conditions, and market demand. 
-Our pricing follows the Taizihe Morning Market to ensure alignment with real-time local wholesale trends.
-<br><br>
-农产品价格受季节、天气及市场供需影响而波动。我们的价格参考太子河早市，
-与本地批发市场行情保持一致。
-</p>
+<details>
+  <summary><strong>📊Pricing Policy | 价格政策</strong></summary>
+  <p>
+  Our product prices are based on daily market conditions and follow the pricing of the Taizihe Morning Market. This ensures fair, transparent, and competitive pricing for all partners.
+  <br><br>
+  我们的产品价格根据市场行情每日浮动，并参考太子河早市价格， 确保价格公平透明，具有市场竞争力。
+  </p>
+</details>
 
 <br>
 
-<div class="factors">
+<details>
+  <summary><strong>Price Trend Explanation | 价格趋势说明</strong></summary>
 
-<div class="factor">
-<h3>🌱 Seasonal Production</h3>
-<p>价格随种植季节变化</p>
-</div>
+  <p>
+  Agricultural product prices fluctuate based on seasonal supply, weather conditions, and market demand. Our pricing follows the Taizihe Morning Market to ensure alignment with real-time local wholesale trends.
+  <br><br>
+  农产品价格受季节、天气及市场供需影响而波动。我们的价格参考太子河早市， 与本地批发市场行情保持一致。
+  </p>
 
-<div class="factor">
-<h3>☀️ Weather Conditions</h3>
-<p>天气影响产量与品质</p>
-</div>
+  <div class="factors">
 
-<div class="factor">
-<h3>📦 Supply & Demand</h3>
-<p>市场供需关系变化</p>
-</div>
+    <div class="factor">
+      <h3>🌱 Seasonal</h3>
+      <p>季节变化</p>
+    </div>
 
-<div class="factor">
-<h3>💰 Market Pricing</h3>
-<p>参考太子河早市行情</p>
-</div>
+    <div class="factor">
+      <h3>☀️ Weather</h3>
+      <p>天气影响</p>
+    </div>
 
-</div>
+    <div class="factor">
+      <h3>📦 Supply & Demand</h3>
+      <p>供需关系</p>
+    </div>
+
+    <div class="factor">
+      <h3>💰 Market</h3>
+      <p>市场行情</p>
+    </div>
+
+  </div>
+
+</details>
 
 </section>
 
@@ -517,8 +509,15 @@ style="border:0;border-radius:12px;">
 </p>
 
 <p style="text-align:center;">
-<a href="https://map.baidu.com/search/辽阳市太子岛农林牧渔基地" target="_blank" class="btn">
-📍 查看精确位置（百度地图）
+🌍 International Users → Google Map<br>
+🇨🇳 国内用户 → 百度地图
+</p>
+
+<!-- Baidu Map (for China users) -->
+<p style="text-align:center;">
+<a href="https://map.baidu.com/poi/%E5%A4%AA%E5%AD%90%E5%B2%9B%E8%80%81%E5%86%9C%E6%B0%91%E5%86%9C%E6%9E%97%E7%89%A7%E6%B8%94%E5%9F%BA%E5%9C%B0/@13725947.93981832,5019898.642875405,20.24z/maptype%3DB_EARTH_MAP?uid=fc20ce0275854d99283a9f60"
+target="_blank" class="btn">
+📍 在百度地图查看农场位置
 </a>
 </p>
 
@@ -537,6 +536,8 @@ Our farm is located on Taizi Island with convenient access to regional markets a
 
 </body>
 </html>
+
+
 
 
 
