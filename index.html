@@ -12,26 +12,122 @@
 <meta name="robots" content="index, follow">
 
 <style>
-body{font-family:Arial,Helvetica,sans-serif;margin:0;background:#f5f5f5;color:#333}
-header{background:#2e7d32;color:white;padding:40px;text-align:center}
-nav{background:#1b5e20;padding:10px;text-align:center}
-nav a{color:white;margin:0 15px;text-decoration:none;font-weight:bold}
-section{padding:40px;max-width:1000px;margin:auto;background:white;margin-top:20px;border-radius:8px}
-.products{display:flex;gap:20px;flex-wrap:wrap}
-.card{flex:1;min-width:200px;border:1px solid #ddd;border-radius:8px;padding:20px;text-align:center}
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  margin:0;
+  background:#f5f5f5;
+  color:#333;
+}
+/* Header */
+header{
+  background:#2e7d32;
+  color:white;
+  padding:40px 20px;
+  text-align:center;
+}
+/* Navigation */
+nav{
+  background:#1b5e20;
+  padding:12px;
+  text-align:center;
+}
+nav a{
+  color:white;
+  margin:0 15px;
+  text-decoration:none;
+  font-weight:bold;
+  transition:0.3s;
+}
+nav a:hover{
+  text-decoration:underline;
+}
+/* Sections */
+section{
+  padding:40px;
+  max-width:1100px;
+  margin:20px auto;
+  background:white;
+  border-radius:10px;
+  box-shadow:0 4px 12px rgba(0,0,0,0.08);
+}
+/* Products */
+.products{
+  display:flex;
+  gap:20px;
+  flex-wrap:wrap;
+}
+.card{
+  flex:1;
+  min-width:250px;
+  border:1px solid #ddd;
+  border-radius:10px;
+  padding:20px;
+  text-align:center;
+  transition:0.3s;
+  background:#fafafa;
+}
+.card:hover{
+  transform:translateY(-5px);
+  box-shadow:0 6px 15px rgba(0,0,0,0.1);
+}
+/* Gallery */
+.gallery{
+  display:flex;
+  gap:20px;
+  flex-wrap:wrap;
+  justify-content:center;
+}
+.photo{
+  text-align:center;
+}
+/* 🔥 KEY IMPROVEMENT: same size images */
+.photo img{
+  width:100%;
+  max-width:300px;
+  height:200px;
+  object-fit:cover;
+  border-radius:10px;
+  transition:0.3s;
+}
+.photo img:hover{
+  transform:scale(1.05);
+}
+/* Footer */
+footer{
+  background:#2e7d32;
+  color:white;
+  text-align:center;
+  padding:20px;
+  margin-top:30px;
+}
+/* Small text */
+.lang{
+  font-size:14px;
+  opacity:0.9;
+}
+/* Mobile optimization */
+@media(max-width:768px){
 
-.gallery{display:flex;gap:20px;flex-wrap:wrap;justify-content:center}
-.photo{text-align:center}
-.photo img{width:100%;max-width:320px;border-radius:10px;transition:0.3s;}
-.photo img:hover{transform:scale(1.05);}
+  section{
+    padding:25px;
+  }
 
-footer{background:#2e7d32;color:white;text-align:center;padding:20px;margin-top:30px}
-.lang{font-size:14px;opacity:0.9}
+  .products{
+    flex-direction:column;
+    align-items:center;
+  }
+
+  .gallery{
+    flex-direction:column;
+    align-items:center;
+  }
+
+}
 </style>
+
+
 </head>
-
 <body>
-
 <header>
 <h1>Taizi Island Heritage Farm | 太子岛老农民农场</h1>
 <p>From Seed Selection to Fresh Market Supply</p>
